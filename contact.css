@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'roboto-bold' ;
+    src: url(./Roboto-Bold.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'roboto-lightitalic' ;
+    src: url(./Roboto-LightItalic.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'roboto-regular' ;
+    src: url(./Roboto-Regular.ttf) format(truetype);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto-regular', sans-serif;
+
+}
+
+.page{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "nav nav nav nav nav nav nav nav nav nav"
+                         "head head head head head head head head head head"
+                         "sec sec sec sec sec sec sec sec sec sec"
+                         "foot foot foot foot foot foot foot foot foot foot ";
+}
+
+.logo{
+    grid-area: logo;
+    width: 300px;
+    padding-left: 50px;
+    margin-left: 10%;
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #1f2937;
+    
+}
+
+section{
+    grid-area: sec;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+header{
+    grid-area: head;
+    background-image: url(./univ-images/conn.jpg);
+    background-position: center right;
+    height: 400px;
+    font-size: 42px;
+}
+.overlay{
+    font-size: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(31, 41, 55, 0.7); 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-family: 'roboto-bold', sans-serif;
+    padding-left: 150px;
+
+
+}    
+
+footer{
+    grid-area: foot;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    padding: 10px;
+    margin-top: 50px;
+    color: white;
+
+}
+
+ul{
+    list-style: none;
+    width: 500px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+li{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+form{
+    width: 400px;
+    height: 600px;
+    background-color: #DEDBEE;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #888888;
+    transition: 0.5s;
+}
+
+form:hover{
+    transform: translateY(-50px);
+}
+form h3{
+    text-align: center;
+}
+
+input, textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button{
+    padding: 15px;
+    background-color: #3882f7;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto;
+}
