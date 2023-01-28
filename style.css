@@ -50,7 +50,7 @@ nav{
     
 }
 
-header{
+.one{
     grid-area: head;
     display: flex;
     padding: 50px;
@@ -61,12 +61,12 @@ header{
     background-color: #1f2937;
 }
 
-.one{
+.two{
     grid-area: sec-one;
     padding: 30px;
 }
 
-.two{
+.three{
     background-color: #e5e7eb;
     grid-area: sec-two;
     display: flex;
@@ -76,7 +76,7 @@ header{
     
 }
 
-.three{
+.four{
     grid-area: sec-three;
     display: flex;
     justify-content: space-around;
